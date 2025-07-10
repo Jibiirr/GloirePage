@@ -1,0 +1,79 @@
+html{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+:root{
+ /* TEXT ATTRIBUTES */
+    --font-base: 'Helvetica Neue', Arial, sans-serif;
+    --font-heading: 'Merriweather', serif;
+    --font-size: 16px;
+    --font-color: #333;
+
+    /* BACKGROUND COLORS */
+    --primary-background-color: #F4ECFE; 
+    --secondary-background-color: #E2D3EF; 
+            
+    /* BORDER COLOR */
+    --primary-border-color: #9985F3; 
+    --secondary-border-color: #C7B7FC; 
+}
+
+*{
+    font-family: var(--font-base);
+}
+
+a{
+    text-decoration: none;
+}
+
+header .header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 1rem;
+    margin: 0;
+    background-color: var(--secondary-background-color);
+}
+        
+body{
+    background-color: var(--primary-background-color);
+    font-family: var(--font-base);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    margin: 0;
+    padding: 1rem;
+}        
+
+.icon{
+    display: flex;
+    height: 50px;
+    width: auto;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+    height: 35px;
+}
+
+.button-container > button{
+    background-color: var(--primary-background-color);
+    border: 0 none;
+}    
+
+.button-container > button:hover{
+    background-color: aqua;
+}
